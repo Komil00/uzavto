@@ -9,7 +9,7 @@ class ModelListSerializers(serializers.ModelSerializer):
 
 
 class CarsListSerializers(serializers.ModelSerializer):
-    # model = ModelListSerializers()
+    model = ModelListSerializers()
 
     class Meta:
         model = Cars
