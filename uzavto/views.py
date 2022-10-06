@@ -38,7 +38,7 @@ class ModelViewSets(viewsets.ReadOnlyModelViewSet):
     permission_classes = [IsAuthenticated]
 
     @action(detail=True, permission_classes=[IsAdminUser], methods=['post'])
-    def add_models(self, request):
+    def add_models(self, request, pk):
         serializer = ModelListSerializers(data=request.data)
         if serializer.is_valid():
             serializer.save()
