@@ -16,3 +16,8 @@ class CarsListSerializers(serializers.ModelSerializer):
         fields = ['model', 'name', 'year', 'image', 'expenses', 'color', 'price']
 
 
+class CarsPostSerializers(serializers.ModelSerializer):
+
+    class Meta:
+        model = Cars
+        fields = ['model', 'name', 'year', 'image', 'expenses', 'color', 'price']
