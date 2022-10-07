@@ -4,7 +4,7 @@ from rest_framework.decorators import action
 from rest_framework.filters import SearchFilter
 from rest_framework.permissions import IsAuthenticated, IsAdminUser
 from rest_framework.response import Response
-
+from django.db.models import Avg, Max, Min
 from customuser.serializers import UserSerializer
 from .models import Cars, Model
 from rest_framework import viewsets, status

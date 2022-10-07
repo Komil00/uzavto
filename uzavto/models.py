@@ -1,9 +1,5 @@
-from django.conf import settings
 from django.db import models
-from django.utils.safestring import mark_safe
-
 from customuser.models import CustomUser
-
 
 # Create your models here.
 
