@@ -32,6 +32,8 @@ INSTALLED_APPS = [
     'customuser',
 
     'rest_framework',
+    'rest_framework.authtoken',
+    'djoser',
     'django_filters',
     'rest_framework_swagger',
 
@@ -140,6 +142,10 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.SessionAuthentication',
     ),
     'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema'
+}
+
+SIMPLE_JWT = {
+   'AUTH_HEADER_TYPES': ('JWT',),
 }
 
 AUTH_USER_MODEL = 'customuser.CustomUser'

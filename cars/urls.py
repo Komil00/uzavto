@@ -13,6 +13,10 @@ urlpatterns = [
     path('', include('uzavto.urls')),
     path('users/', include('customuser.urls')),
 
+    path('auth/', include('djoser.urls')),
+    path('auth/', include('djoser.urls.authtoken')),
+    path('auth/', include('djoser.urls.jwt')),
+
     path('api/', include('rest_framework.urls')),
     path('swagger-docs/', schema_view),
     path('docs/', include_docs_urls(title='Polls API')),
