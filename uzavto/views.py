@@ -1,3 +1,4 @@
+import requests.sessions
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.authentication import SessionAuthentication
 from rest_framework.decorators import action
